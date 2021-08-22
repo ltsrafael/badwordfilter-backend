@@ -15,7 +15,7 @@ public class WordController {
     @Autowired
     private WordRepository wordRepository;
 
-    @PostMapping
+    @PutMapping
     public Word postMessage(@RequestBody Word word) {
         return wordRepository.save(word);
     }
